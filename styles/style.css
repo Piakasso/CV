@@ -44,6 +44,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
 ._container {
   max-width: 1500px;
   margin: 0 auto;
@@ -717,7 +724,7 @@ body {
   }
 
   .expertise__text {
-    line-height: -1.5rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1015,9 +1022,8 @@ body {
 #submit::before {
   content: url(../img/arrow.svg);
   position: absolute;
-  top: 50% - 7px;
+  top: 40%;
   right: 5%;
-  z-index: 6;
 }
 
 .footer__connect {
@@ -1055,7 +1061,7 @@ body {
 }
 
 .contacts__email {
-  columns: #fff;
+  color: #fff;
   font-size: 1.3rem;
   line-height: 2rem;
 }
@@ -1065,11 +1071,11 @@ body {
 }
 
 .contacts__address {
-  columns: #fff;
+  color: #fff;
   line-height: 2rem;
 }
 .contacts__phone {
-  columns: #fff;
+  color: #fff;
   line-height: 2rem;
 }
 
