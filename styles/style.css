@@ -328,7 +328,7 @@ body {
 .page__main-block {
   position: relative;
   background-color: #222;
-  background-image: url("/img/im.jpg");
+  background-image: url("./img/im.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right top;
