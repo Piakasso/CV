@@ -444,7 +444,7 @@ body {
   justify-content: space-between;
 }
 
-.skills__progressbars_title {
+.progressbars__title {
   margin: 0 0 7.3rem 0;
 }
 .bar__item {
@@ -475,75 +475,7 @@ body {
 
   background-color: #ff5b5b;
   height: 100%;
-}
-
-#bar1 {
-  width: 80%;
-  animation: bar1 2000ms;
-}
-
-@keyframes bar1 {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 80%;
-  }
-}
-
-#bar2 {
-  width: 60%;
-  animation: bar2 2000ms;
-}
-@keyframes bar2 {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 60%;
-  }
-}
-
-#bar3 {
-  width: 70%;
-  animation: bar3 2000ms;
-}
-@keyframes bar3 {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 70%;
-  }
-}
-#bar4 {
-  width: 15%;
-  animation: bar4 2000ms;
-}
-@keyframes bar4 {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 15%;
-  }
-}
-#bar5 {
   width: 50%;
-  animation: bar5 2000ms;
-}
-@keyframes bar5 {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 50%;
-  }
 }
 
 .awards__title {
@@ -576,7 +508,7 @@ body {
     margin: 9rem 4rem 8rem 4rem;
   }
 
-  .skills__progressbars_title {
+  .progressbars__title {
     margin: 0 0 4rem 0;
   }
 
@@ -1017,6 +949,12 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #9f2121;
+  transition: 500ms;
 }
 
 #submit::before {

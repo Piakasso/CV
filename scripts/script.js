@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const body = document.querySelector("body");
   const skills = document.querySelector(".skills__progressbars");
   const progressbars = document.querySelectorAll(".bar__progress span");
+  const skillsPercent = [60, 70, 80, 15, 45];
 
   //Activate burger
 
@@ -23,16 +24,23 @@ window.addEventListener("DOMContentLoaded", (event) => {
   //Animate progressbar
 
   const sectionObserver = new IntersectionObserver(animateProgressbars, {
-    threshold: 0.4,
+    threshold: 0.3,
   });
   sectionObserver.observe(skills);
 
   function animateProgressbars(entries, observe) {
     if (entries[0].isIntersecting) {
       progressbars.forEach((progressbar, i) => {
-        progressbar.outerHTML = `
-            <span id=bar${i + 1}></span>
-        `;
+        let width = 1;
+        let id = setInterval(frame, 15);
+        function frame() {
+          if (width >= skillsPercent[i]) {
+            clearInterval(id);
+          } else {
+            width++;
+            progressbar.style.width = width + "%";
+          }
+        }
       });
       sectionObserver.unobserve(skills);
     }
